@@ -4,17 +4,17 @@ Installation
 Windows
 -------------------------------
 
-**You are recommended to download** `TagUI Windows Installer <https://github.com/kelaberetiv/TagUI/releases/download/v6.46.0/TagUI_Windows.exe>`_, instead of the advanced steps below. If you use the installer, specify an installation folder which you have write permission, for example ``C:\RPA`` or a ``RPA`` folder on your Windows Deskop. After your installation, continue from step 6.
+**You are recommended to download** `TagUI Windows Installer <https://github.com/kelaberetiv/TagUI/releases/download/v6.46.0/TagUI_Windows.exe>`_, instead of the advanced steps below. If you use the installer, specify an installation folder which you have write permission, for example ``c:\rpa`` or or ``d:\rpa`` or a ``rpa`` folder on your Windows Deskop. After your installation, continue from step 6.
 
 1. Read the above, or download zip file `TagUI v6.46 for Windows <https://github.com/kelaberetiv/TagUI/releases/download/v6.46.0/TagUI_Windows.zip>`_
 
-2. Unzip the contents to ``C:\``
+2. Unzip the contents to ``c:\rpa``
 
-3. `Install OpenJDK for Windows <https://corretto.aws/downloads/latest/amazon-corretto-8-x64-windows-jdk.msi>`_
+3. `Install OpenJDK for Windows <https://corretto.aws/downloads/latest/amazon-corretto-8-x64-windows-jdk.msi> may not be necessary if already has Java Run Time`_
 
 4. `Install Chrome web browser <https://www.google.com/chrome/>`_
 
-5. `Add c:\\tagui\\src to start of path <https://www.c-sharpcorner.com/article/add-a-directory-to-path-environment-variable-in-windows-10/>`_
+5. `Add c:\\rpa\\tagui\\src to start of path <https://www.c-sharpcorner.com/article/add-a-directory-to-path-environment-variable-in-windows-10/>`_
 
 6. Open :ref:`Command Prompt <how-to-use-command-prompt>`
 
@@ -22,7 +22,7 @@ Windows
 
 .. code-block:: bat
 
-    tagui c:\tagui\flows\samples\1_google.tag
+    tagui c:\rpa\tagui\flows\samples\1_google.tag
 
 8. :ref:`Having problems? Click here.<troubleshooting-windows>` You have run your first TagUI flow! 🎉
 
@@ -42,13 +42,17 @@ macOS / Linux
 
 5. Open :ref:`Terminal <how-to-use-terminal>`
 
-6. Copy, paste and run these commands, replacing ``your_tagui_path`` accordingly:
+6. Copy, paste and run these commands, replacing ``your_tagui_path`` or like ``/Users/kensoh/Desktop/`` accordingly:
 
 .. code-block:: bash
 
     sudo ln -sf /your_tagui_path/tagui/src/tagui /usr/local/bin/tagui
+    or for example
+    sudo ln -sf /Users/kensoh/Desktop/tagui/src/tagui /usr/local/bin/tagui
 
     tagui /your_tagui_path/tagui/flows/samples/1_google.tag
+    or for example
+    tagui /Users/kensoh/Desktop/tagui/flows/samples/1_google.tag
 
 7. :ref:`Having problems? Click here.<troubleshooting-macos-linux>` You have run your first TagUI flow! 🎉
 
